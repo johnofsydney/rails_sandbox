@@ -1,0 +1,2 @@
+module AccreditedHelper
+end

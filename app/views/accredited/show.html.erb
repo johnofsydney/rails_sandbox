@@ -1,0 +1,20 @@
+<h3>Accredited Units</h3>
+<h4>From <a href="https://www.fertilitysociety.com.au/rtac/accredited-units">https://www.fertilitysociety.com.au/rtac/accredited-units</a></h4>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Address</td>
+
+    <td>Number</td>
+    <td>Doctor</td>
+  </tr>
+  <% @clinics.each do |clinic| %>
+    <tr>
+    <td><%= clinic[:name] %></td>
+    <td><%= clinic[:address] %></td>
+    <td><%= clinic[:number] %></td>
+    <td><%= clinic[:doctor] %></td>
+    </tr>
+  <% end %>
+</table>
